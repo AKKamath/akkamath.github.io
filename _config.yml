@@ -83,7 +83,7 @@ analytics:
 # Site Author
 author:
   name             : "Aditya K Kamath"
-  avatar           : "profile.png"
+  avatar           : "Logo.png"
   bio              : "Ph.D. student at <br> University of Washington"
   location         : "Seattle, Washington"
   employer         :
@@ -105,7 +105,7 @@ author:
   impactstory      : #"https://profiles.impactstory.org/u/xxxx-xxxx-xxxx-xxxx"
   lastfm           :
   linkedin         :
-  orcid            : "http://orcid.org/yourorcidurl"
+  orcid            :
   pinterest        :
   soundcloud       :
   stackoverflow    : # http://stackoverflow.com/users/123456/username
