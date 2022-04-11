@@ -59,7 +59,6 @@ $code-background-color      : #3a3541;
 $code-background-color-dark : $light-gray;
 $text-color                 : #fff;
 $border-color               : $light-gray;
-$mast-background-color      : #444d;
 
 $primary-color              : #7a8288;
 $success-color              : #62c462;
@@ -96,6 +95,7 @@ $link-color-hover           : mix(#000, $link-color, 25%);
 $link-color-visited         : mix(#fff, $link-color, 25%);
 $masthead-link-color        : $text-color;
 $masthead-link-color-hover  : mix(#000, $masthead-link-color, 25%);
+$mast-background-color      : #444d;
 
 
 /*

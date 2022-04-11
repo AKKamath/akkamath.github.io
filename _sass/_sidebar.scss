@@ -12,6 +12,9 @@
 
   @include clearfix();
   margin-bottom: 1em;
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
 
   @include breakpoint($large) {
     @include span(2 of 12);
@@ -145,7 +148,7 @@
 
   li:last-child {
     a {
-      margin-bottom: 0;
+      margin-bottom: -0.5em;
     }
   }
 
@@ -171,7 +174,7 @@
   list-style-type: none;
   border: 1px solid $border-color;
   border-radius: $border-radius;
-  background: #fff;
+  background: $background-color;
   z-index: -1;
   box-shadow: 0 0 10px rgba(#000, 0.25);
   cursor: default;
