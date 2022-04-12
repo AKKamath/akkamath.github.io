@@ -52,13 +52,22 @@
     <p class="archive__item-excerpt" itemprop="description"><p>{{ post.excerpt | markdownify | remove: '<p>' | remove: '</p>' }}<strong><a href="{{ base_path }}{{ post.url }}" rel="permalink"> Read more</a></strong></p></p>
     {% endif %}
     
-    {% if post.citation and post.paperurl %}
-      <p>Recommended citation: {{ post.citation }} <a href="{{ post.paperurl }}"><u>{{ post.paperurl }}</u></a></p>
-    {% elsif post.citation %}
-      <p>Recommended citation: {{ post.citation }} </p>
-    {% elsif post.paperurl %}
-      <p>Download <a href=" {{ post.paperurl }} "><u>here</u></a></p>
+    {% if post.citation %}
+      <p>Recommended citation: {{ post.citation }}</p>
     {% endif %}
+    <p>
+    {% if post.paperurl %}
+      [<a href=" {{ post.paperurl }} ">Paper</a>]
+    {% endif %}
+    {% if post.videourl %}
+      [<a href=" {{ post.videourl }} ">Video</a>]
+    {% endif %}
+    {% if post.codeurl %}
+      [<a href=" {{ post.codeurl }} ">Code</a>]
+    {% endif %}
+    </p>
+    
+    
 
   </article>
 </div>
