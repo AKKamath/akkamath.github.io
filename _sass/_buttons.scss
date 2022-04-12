@@ -23,7 +23,7 @@
   cursor: pointer;
 
   &:hover {
-    background-color: mix(white, #000, 20%);
+    background-color: $text-color;
   }
 
   .icon {
@@ -53,7 +53,7 @@
     background-color: $background-color;
 
     &:hover {
-      color: mix(#000, $text-color, 20%) !important;
+      color: mix($background-color, $text-color, 80%) !important;
       border-color: $gray;
     }
   }
