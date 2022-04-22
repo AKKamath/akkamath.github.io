@@ -52,7 +52,7 @@ atom_feed:
   path                   : # blank (default) uses feed.xml
 
 # SEO Related
-google_site_verification :
+google_site_verification : googlee19f89aeace26d92.html
 bing_site_verification   :
 alexa_site_verification  :
 yandex_site_verification :
@@ -148,6 +148,7 @@ exclude:
   - package.json
   - tmp
   - vendor
+  - Example_webpages/*
 keep_files:
   - .git
   - .svn
@@ -178,16 +179,16 @@ kramdown:
 # Collections
 collections:
   teaching:
-    output: true
+    output: false
     permalink: /:collection/:path/
   publications:
     output: true
     permalink: /:collection/:path/
   portfolio:
-    output: true
+    output: false
     permalink: /:collection/:path/
   talks:
-    output: true
+    output: false
     permalink: /:collection/:path/
 
 
