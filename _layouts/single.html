@@ -49,20 +49,22 @@ layout: default
         {% if page.link %}<div><a href="{{ page.link }}" class="btn">{{ site.data.ui-text[site.locale].ext_link_label | default: "Direct Link" }}</a></div>{% endif %}
       </section>
         
+      {% if post.collection == 'publications' %}
         <p>
         {% if page.paperurl %}
-          [<i class="fas fa-fw fa-file-pdf" aria-hidden="true"></i><a href="{{ page.paperurl }}">Paper</a>]
+          [<i class="fas fa-fw fa-file-pdf" aria-hidden="true"></i><a href="{{ page.paperurl }}">Paper</a> ]
         {% endif %}
         {% if page.videourl %}
-          [<i class="fab fa-fw fa-youtube" aria-hidden="true"></i><a href="{{ page.videourl }}">Video</a>]
+          [ <i class="fab fa-fw fa-youtube" aria-hidden="true"></i><a href="{{ page.videourl }}">Video</a> ]
         {% endif %}
 		{% if page.slideurl %}
-		  [<i class="fas fa-fw fa-file-powerpoint" aria-hidden="true"></i><a href="{{ post.slideurl }}">Slides</a>]
+		  [<i class="fas fa-fw fa-file-powerpoint" aria-hidden="true"></i><a href="{{ post.slideurl }}">Slides</a> ]
 		{% endif %}
         {% if page.codeurl %}
-          [<i class="fab fa-fw fa-github" aria-hidden="true"></i><a href="{{ page.codeurl }}">Code</a>]
+          [<i class="fab fa-fw fa-github" aria-hidden="true"></i><a href="{{ page.codeurl }}">Code</a> ]
         {% endif %}
     	</p>
+      {% endif %}
 
       <footer class="page__meta">
         {% if site.data.ui-text[site.locale].meta_label %}
