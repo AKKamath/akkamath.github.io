@@ -51,13 +51,16 @@ layout: default
         
         <p>
         {% if page.paperurl %}
-          [<a href="{{ page.paperurl }}">Paper</a>]
+          [<i class="fas fa-fw fa-file-pdf" aria-hidden="true"></i><a href="{{ page.paperurl }}">Paper</a>]
         {% endif %}
         {% if page.videourl %}
-          [<a href="{{ page.videourl }}">Video</a>]
+          [<i class="fab fa-fw fa-youtube" aria-hidden="true"></i><a href="{{ page.videourl }}">Video</a>]
         {% endif %}
+		{% if page.slideurl %}
+		  [<i class="fas fa-fw fa-file-powerpoint" aria-hidden="true"></i><a href="{{ post.slideurl }}">Slides</a>]
+		{% endif %}
         {% if page.codeurl %}
-          [<a href="{{ page.codeurl }}">Code</a>]
+          [<i class="fab fa-fw fa-github" aria-hidden="true"></i><a href="{{ page.codeurl }}">Code</a>]
         {% endif %}
     	</p>
 

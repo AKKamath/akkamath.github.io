@@ -41,7 +41,7 @@
         {% if post.collection == 'teaching' %}
           <p> {{ post.type }}, <i>{{ post.venue }}</i>, {{ post.date | default: "1900-01-01" | date: "%Y" }} </p>
         {% elsif post.collection == 'publications' %}
-          <p>Published in <i>{{ post.venue }}</i>, {{ post.date | default: "1900-01-01" | date: "%Y" }} </p>
+          <p>Published in <i>{{ post.venue }}</i></p>
         {% elsif post.date %}
          <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> {{ site.data.ui-text[site.locale].date_label | default: "Published:" }}</strong> <time datetime="{{ post.date | default: "1900-01-01" | date_to_xmlschema }}">{{ post.date | default: "1900-01-01" | date: "%B %d, %Y" }}</time></p>
         {% endif %}
@@ -52,18 +52,18 @@
     <p class="archive__item-excerpt" itemprop="description"><p>{{ post.excerpt | markdownify | remove: '<p>' | remove: '</p>' }}<strong><a href="{{ base_path }}{{ post.url }}" rel="permalink"> Read more</a></strong></p></p>
     {% endif %}
     
-    {% if post.citation %}
-      <p>Recommended citation: {{ post.citation }}</p>
-    {% endif %}
     <p>
     {% if post.paperurl %}
-      [<a href=" {{ post.paperurl }} ">Paper</a>]
+      [<i class="fas fa-fw fa-file-pdf" aria-hidden="true"></i><a href=" {{ post.paperurl }} ">Paper</a>]
     {% endif %}
     {% if post.videourl %}
-      [<a href=" {{ post.videourl }} ">Video</a>]
+      [<i class="fab fa-fw fa-youtube" aria-hidden="true"></i><a href=" {{ post.videourl }} ">Video</a>]
+    {% endif %}
+    {% if post.slideurl %}
+		  [<i class="fas fa-fw fa-file-powerpoint" aria-hidden="true"></i><a href="{{ post.slideurl }}">Slides</a>]
     {% endif %}
     {% if post.codeurl %}
-      [<a href=" {{ post.codeurl }} ">Code</a>]
+      [<i class="fab fa-fw fa-github" aria-hidden="true"></i><a href=" {{ post.codeurl }} ">Code</a>]
     {% endif %}
     </p>
     
