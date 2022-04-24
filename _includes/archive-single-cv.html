@@ -1,5 +1,6 @@
 {% include base_path %}
 
+<li>
 {% if post.header.teaser %}
   {% capture teaser %}{{ post.header.teaser }}{% endcapture %}
 {% else %}
@@ -14,7 +15,6 @@
 
 <div class="{{ include.type | default: "list" }}__item">
   <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
-    <li>
     {% if include.type == "grid" and teaser %}
       <div class="archive__item-teaser">
         <img src=
@@ -45,6 +45,6 @@
       {% if post.venue%}{{ post.venue }}{% endif %}
       </p>
     {% endif %}
-    </li>
  </article>
 </div>
+</li>
