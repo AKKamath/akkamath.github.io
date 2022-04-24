@@ -49,8 +49,8 @@ layout: default
         {% if page.link %}<div><a href="{{ page.link }}" class="btn">{{ site.data.ui-text[site.locale].ext_link_label | default: "Direct Link" }}</a></div>{% endif %}
       </section>
         
-      {% if post.collection == 'publications' %}
-        <p>
+      {% if page.collection == 'publications' %}
+        <p class="page__datalinks">
         {% if page.paperurl %}
           [<i class="fas fa-fw fa-file-pdf" aria-hidden="true"></i><a href="{{ page.paperurl }}">Paper</a> ]
         {% endif %}
