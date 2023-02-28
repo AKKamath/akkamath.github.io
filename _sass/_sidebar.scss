@@ -48,7 +48,7 @@
   }
 
   img {
-    width: 100%;
+    width: 85%;
   }
 }
 
@@ -131,12 +131,34 @@
   font-size: $type-size-4;
 }
 
+.author__pronunciation {
+  margin: 0;
+  font-style: italic;
+  font-size: $type-size-7;
+
+  @include breakpoint($large) {
+    margin-top: 5px;
+  }
+}
+
+.author__sound {
+  font-size: 80%;
+  border:none;
+  background-color: transparent;
+  color: $body-color;
+  padding: 0;
+}
+
+.author__sound:hover {
+  color: $border-color;
+}
+
 .author__bio {
   margin: 0;
 
   @include breakpoint($large) {
     margin-top: 10px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
   }
 }
 

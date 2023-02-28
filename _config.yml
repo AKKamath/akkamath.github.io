@@ -82,6 +82,8 @@ analytics:
 author:
   name             : "Aditya K Kamath"
   avatar           : "Logo.webp"
+  pronunciation    : "Ah-dith-yuh K Kah-muth"
+  sound            : "/files/Aditya_K_Kamath.mp3"
   bio              : "Ph.D. student at <br> University of Washington"
   location         : #"Seattle, Washington"
   employer         :
