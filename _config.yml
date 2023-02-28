@@ -83,7 +83,7 @@ author:
   name             : "Aditya K Kamath"
   avatar           : "Logo.webp"
   bio              : "Ph.D. student at <br> University of Washington"
-  location         : "Seattle, Washington"
+  location         : #"Seattle, Washington"
   employer         :
   pubmed           :
   googlescholar    : "https://scholar.google.com/citations?user=xX7EroEAAAAJ"
@@ -109,11 +109,11 @@ author:
   stackoverflow    : # http://stackoverflow.com/users/123456/username
   steam            :
   tumblr           :
-  twitter          :
+  twitter          : "https://twitter.com/AdityaKKamath"
   vine             :
   weibo            :
   xing             :
-  youtube          :
+  youtube          : "https://www.youtube.com/@adityakkamath"
   wikipedia        :
 
 
