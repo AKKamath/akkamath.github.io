@@ -33,6 +33,7 @@ layout: default
         {% if page.modified %}
           <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> {{ site.data.ui-text[site.locale].date_label | default: "Published:" }}</strong> <time datetime="{{ page.modified | date: "%Y-%m-%d" }}">{{ page.modified | date: "%B %d, %Y" }}</time></p>
         {% endif %}
+        {% if page.authorlist%}{{ page.authorlist }}<br>{% endif %}
         
         {% if page.collection == 'teaching' %}
           <p> {{ page.type }}, <i>{{ page.venue }}</i>, {{ page.date | default: "1900-01-01" | date: "%Y" }} </p>
@@ -50,21 +51,23 @@ layout: default
       </section>
         
       {% if page.collection == 'publications' %}
-        <p class="page__datalinks">
+      <p class="page__datalinks">
         {% if page.paperurl %}
           [<i class="fas fa-fw fa-file-pdf" aria-hidden="true"></i><a href="{{ page.paperurl }}">Paper</a> ]
         {% endif %}
         {% if page.videourl %}
           [ <i class="fab fa-fw fa-youtube" aria-hidden="true"></i><a href="{{ page.videourl }}">Video</a> ]
         {% endif %}
-		{% if page.slideurl %}
-		  [<i class="fas fa-fw fa-file-powerpoint" aria-hidden="true"></i><a href="{{ post.slideurl }}">Slides</a> ]
-		{% endif %}
+        {% if page.slideurl %}
+          [<i class="fas fa-fw fa-file-powerpoint" aria-hidden="true"></i><a href="{{ post.slideurl }}">Slides</a> ]
+        {% endif %}
         {% if page.codeurl %}
           [<i class="fab fa-fw fa-github" aria-hidden="true"></i><a href="{{ page.codeurl }}">Code</a> ]
         {% endif %}
     	</p>
       {% endif %}
+
+      {% if page.authorlist%}(*)Authors contributed equally to this work<br>{% endif %}
 
       <footer class="page__meta">
         {% if site.data.ui-text[site.locale].meta_label %}
