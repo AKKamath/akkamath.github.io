@@ -16,9 +16,11 @@ Education
 
 Work experience
 ======
+* June 2022 - September 2022: GPU-Centric Collectives Distributed Systems Research Intern at AMD Research
+  * Worked on improving GPU collectives for [ROC_SHMEM](https://github.com/ROCm-Developer-Tools/ROC_SHMEM).
 * June 2019 - August 2021: Research Assistant at Indian Institute of Science
-  * Worked on enhancing race detection in GPUs. (ISCA ’20, SOSP ’21) 
-  * Worked on application of NVM in parallel architectures. (ASPLOS ’22)
+  * Worked on enhancing race detection in GPUs. (ISCA '20, SOSP '21) 
+  * Worked on application of NVM in parallel architectures. (ASPLOS '22, '23)
   * Worked under the guidance of Professor Arkaprava Basu.
 
 * May - July 2018: Software Engineer Intern at Microsoft
@@ -52,5 +54,6 @@ Publications
   
 Service and leadership
 ======
+* Mentor for [Pre-Application Mentorship Program](https://www.cs.washington.edu/academics/phd/admissions/pams) at UW CSE. [Mentored 5 students for the 2022 session]
 * Head Placement Coordinator at National Institute of Technology Karnataka: Was responsible for managing the Placement Coordinators and to ensure all placement related activities went smoothly. Personally handled around a dozen companies, and indirectly helped manage hundreds of companies. 
 * Co-Head of Algorithms Group of Web Enthusiasts’ Club at NITK: Helped organise competitive coding events in college. Gave talks on the basics of algorithms and optimisations. 
