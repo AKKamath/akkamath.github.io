@@ -15,7 +15,13 @@
   </div>
 
   <div class="author__content">
-    <h3 class="author__name">{{ author.name }}</h3>
+    <h3 class="author__name">
+      {{ author.name }}
+      {% if author.sound %}
+        <audio id="author__sound" src={{ author.sound }} type="audio/mpeg"></audio>
+        <button class="fa fa-volume-up author__sound" onclick="document.getElementById('author__sound').play()"></button>
+      {% endif %}
+    </h3>
     {% if author.pronunciation %}
       <div class="author__pronunciation">({{ author.pronunciation }} 
       {% if author.sound %}

@@ -121,9 +121,16 @@
 .author__name {
   margin: 0;
 
+  .author__sound {
+    display: contents;
+  }
+
   @include breakpoint($large) {
     margin-top: 10px;
     margin-bottom: 10px;
+    .author__sound {
+      display: none;
+    }
   }
 }
 .sidebar .author__name {
@@ -135,9 +142,11 @@
   margin: 0;
   font-style: italic;
   font-size: $type-size-7;
+  display: none;
 
   @include breakpoint($large) {
     margin-top: 5px;
+    display: block;
   }
 }
 
