@@ -111,8 +111,17 @@
 }
 
 .page__datalinks {
-	width: fit-content;
-	margin: auto;
+  display: flex;
+  justify-content: space-between;
+  max-width: 45%;
+  min-width: 24em;
+}
+
+@media (max-width: 450px) {
+  .page__datalinks {
+    max-width: none;
+    min-width: auto;
+  }
 }
 
 .page__hero {
@@ -152,6 +161,7 @@
     .btn {
       color: #fff;
       text-shadow: 1px 1px 4px rgba(#000, 0.5);
+      text-decoration: none;
     }
 
     .page__lead {
