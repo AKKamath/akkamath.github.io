@@ -53,7 +53,7 @@
     background-color: $background-color;
 
     &:hover {
-      color: mix($background-color, $text-color, 80%) !important;
+      color: mix($background-color, $text-color, 90%) !important;
       border-color: $gray;
     }
   }
