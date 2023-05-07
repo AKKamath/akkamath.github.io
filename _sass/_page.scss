@@ -124,6 +124,10 @@
   }
 }
 
+.divider__line {
+  border-top: 1px solid $border-color;
+}
+
 .page__hero {
   position: relative;
   margin-bottom: 2em;
