@@ -195,11 +195,12 @@
     height: 100%;
     right: 0;
     padding: 0 0.5rem;
-    border: 0;
+    border: 1px;
     outline: none;
-    background-color: $primary-color;
+    background-color: $background-color;
     color: #fff;
     cursor: pointer;
+    border-radius: 5px;
   }
 
   .visible-links {
