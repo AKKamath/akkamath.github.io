@@ -48,24 +48,23 @@ layout: default
       <section class="page__content" itemprop="text">
         {{ content }}
         {% if page.link %}<div><a href="{{ page.link }}" class="btn">{{ site.data.ui-text[site.locale].ext_link_label | default: "Direct Link" }}</a></div>{% endif %}
+        {% if page.collection == 'publications' %}
+        <p class="page__datalinks">
+          {% if page.paperurl %}
+            <a href=" {{ post.paperurl }} "><button class="btn btn--inverse"><i class="fas fa-fw fa-file-pdf" aria-hidden="true"></i> Paper </button></a>
+          {% endif %}
+          {% if page.videourl %}
+            <a href=" {{ post.videourl }} "><button class="btn btn--inverse"><i class="fab fa-fw fa-youtube" aria-hidden="true"></i> Video </button></a>
+          {% endif %}
+          {% if page.slideurl %}
+            <a href="{{ post.slideurl }}"><button class="btn btn--inverse"><i class="fas fa-fw fa-file-powerpoint" aria-hidden="true"></i> Slides</button></a>
+          {% endif %}
+          {% if page.codeurl %}
+            <a href=" {{ post.codeurl }} "><button class="btn btn--inverse"><i class="fab fa-fw fa-github" aria-hidden="true"></i> Code</button></a>
+          {% endif %}
+        </p>
+        {% endif %}
       </section>
-        
-      {% if page.collection == 'publications' %}
-      <p class="page__datalinks">
-        {% if page.paperurl %}
-          <a href=" {{ post.paperurl }} "><button class="btn btn--inverse"><i class="fas fa-fw fa-file-pdf" aria-hidden="true"></i> Paper </button></a>
-        {% endif %}
-        {% if page.videourl %}
-          <a href=" {{ post.videourl }} "><button class="btn btn--inverse"><i class="fab fa-fw fa-youtube" aria-hidden="true"></i> Video </button></a>
-        {% endif %}
-        {% if page.slideurl %}
-          <a href="{{ post.slideurl }}"><button class="btn btn--inverse"><i class="fas fa-fw fa-file-powerpoint" aria-hidden="true"></i> Slides</button></a>
-        {% endif %}
-        {% if page.codeurl %}
-          <a href=" {{ post.codeurl }} "><button class="btn btn--inverse"><i class="fab fa-fw fa-github" aria-hidden="true"></i> Code</button></a>
-        {% endif %}
-    	</p>
-      {% endif %}
 
       <footer class="page__meta">
         {% if site.data.ui-text[site.locale].meta_label %}
