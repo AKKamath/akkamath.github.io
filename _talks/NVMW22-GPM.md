@@ -10,6 +10,7 @@ location: "UCSD, San Diego, California"
 paperurl: '/files/NVMW22_GPM.pdf'
 slideurl: '/files/NVMW22_GPM.pptx'
 videourl: 'https://www.youtube.com/watch?v=OJnUAifdffQ'
+videoembed: '<iframe width="873" height="491" src="https://www.youtube.com/embed/OJnUAifdffQ" title="[NVMW 2022, Short Talk] GPM: Leveraging Persistent Memory from a GPU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>'
 codeurl: 'https://github.com/csl-iisc/GPM-ASPLOS22'
 ---
 
