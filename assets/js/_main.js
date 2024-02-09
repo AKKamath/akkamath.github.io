@@ -5,7 +5,7 @@
 $(document).ready(function(){
    // Sticky footer
   var bumpIt = function() {
-      $("body").css("margin-bottom", $(".page__footer").outerHeight(true));
+      //$("body").css("margin-bottom", $(".page__footer").outerHeight(true));
     },
     didResize = false;
 
@@ -36,11 +36,11 @@ $(document).ready(function(){
       // fix
       Stickyfill.rebuild();
       Stickyfill.init();
-      $(".author__urls").show();
+      $(".author__urls").removeClass('hide');
     } else {
       // unfix
       Stickyfill.stop();
-      $(".author__urls").hide();
+      $(".author__urls").addClass('hide');
     }
   };
 
@@ -53,7 +53,7 @@ $(document).ready(function(){
   // Follow menu drop down
 
   $(".author__urls-wrapper button").on("click", function() {
-    $(".author__urls").fadeToggle("fast", function() {});
+    $(".author__urls").toggleClass('hide');
     $(".author__urls-wrapper button").toggleClass("open");
   });
 
