@@ -16,6 +16,10 @@
   margin-left: auto;
   margin-right: auto;
 
+  .divider__line {
+    display: none;
+  }
+
   @include breakpoint($large) {
     @include span(2 of 12);
     opacity: 1;
@@ -24,6 +28,18 @@
 
     &:hover {
       opacity: 1;
+    }
+    .divider__line {
+      display: block;
+    }
+    &:hover {
+      .author__pronunciation {
+        margin-top: 5px;
+        display: block;
+      }
+      .author__name {
+        text-decoration: none;
+      }
     }
   }
 
@@ -128,6 +144,7 @@
   @include breakpoint($large) {
     margin-top: 5px;
     margin-bottom: 10px;
+    text-decoration: underline dotted 2pt $light-gray;
     .author__sound {
       display: none;
     }
@@ -143,11 +160,6 @@
   font-style: italic;
   font-size: $type-size-7;
   display: none;
-
-  @include breakpoint($large) {
-    margin-top: 5px;
-    display: block;
-  }
 }
 
 .author__sound {
