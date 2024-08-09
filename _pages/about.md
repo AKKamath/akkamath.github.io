@@ -11,9 +11,10 @@ Heya! I'm a Ph.D. student at the University of Washington's Paul G Allen School 
 My current work revolves around analyzing data movement and mitigating its performance impact in contemporary applications [[ISCA '24](/publication/ISCA24-MCSquare)]. 
 I hope to explore this problem across the stack from the single-node architectural level to multi-machine distributed systems.
 
-There are two main axes by which I'm doing this:     
-1) Avoiding (unnecessary) data movement     
-2) Hiding overheads of movement by overlapping it with other operations.
+There are three main axes by which I'm doing this:     
+1) Avoiding (unnecessary) data movement,     
+2) Reducing (necessary) data movement, and     
+3) Hiding the overheads of data movement by overlapping it with other operations.
 
 
 Prior to this, I spent two years as a research assistant at the Indian Institute of Science, working with [Professor Arkaprava Basu](https://www.csa.iisc.ac.in/~arkapravab/). Here, I worked on improving race detection in GPUs [[ISCA '20](https://dl.acm.org/doi/10.1109/ISCA45697.2020.00088), [SOSP '21](https://dl.acm.org/doi/10.1145/3477132.3483545)], and improving GPU performance through the use of NVM technology [[ASPLOS '22](https://dl.acm.org/doi/abs/10.1145/3503222.3507758), ['23](https://dl.acm.org/doi/10.1145/3575693.3575749)].
