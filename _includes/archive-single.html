@@ -58,20 +58,23 @@
       
       
       {% if post.collection == 'publications' or post.collection == 'talks' %}
-      <p class="page__datalinks">
-      {% if post.paperurl %}
-        <a href=" {{ post.paperurl }} "><button class="btn btn--inverse"><i class="fas fa-fw fa-file-pdf" aria-hidden="true"></i> Paper </button></a>
-      {% endif %}
-      {% if post.videourl %}
-        <a href=" {{ post.videourl }} "><button class="btn btn--inverse"><i class="fab fa-fw fa-youtube" aria-hidden="true"></i> Video </button></a>
-      {% endif %}
-      {% if post.slideurl %}
-        <a href="{{ post.slideurl }}"><button class="btn btn--inverse"><i class="fas fa-fw fa-file-powerpoint" aria-hidden="true"></i> Slides</button></a>
-      {% endif %}
-      {% if post.codeurl %}
-        <a href=" {{ post.codeurl }} "><button class="btn btn--inverse"><i class="fab fa-fw fa-github" aria-hidden="true"></i> Code</button></a>
-      {% endif %}
-      </p>
+        <p class="page__datalinks">
+        {% if post.paperurl %}
+          <a href=" {{ post.paperurl }} "><button class="btn btn--inverse"><i class="fas fa-fw fa-file-pdf" aria-hidden="true"></i> Paper </button></a>
+        {% endif %}
+        {% if post.videourl %}
+          <a href=" {{ post.videourl }} "><button class="btn btn--inverse"><i class="fab fa-fw fa-youtube" aria-hidden="true"></i> Video </button></a>
+        {% endif %}
+        {% if post.slideurl %}
+          <a href="{{ post.slideurl }}"><button class="btn btn--inverse"><i class="fas fa-fw fa-file-powerpoint" aria-hidden="true"></i> Slides</button></a>
+        {% endif %}
+        {% if post.codeurl %}
+          <a href=" {{ post.codeurl }} "><button class="btn btn--inverse"><i class="fab fa-fw fa-github" aria-hidden="true"></i> Code</button></a>
+        {% endif %}
+        {% if post.bibtex %}
+          <button class="btn btn--inverse" onclick='prompt("BibTeX:", "{{ post.bibtex }}")'><i class="fas fa-fw fa-file-code"></i> BibTeX</button>
+        {% endif %}
+        </p>
       {% endif %}
     </article>
   </div>

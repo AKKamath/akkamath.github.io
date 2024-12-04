@@ -69,6 +69,9 @@ layout: default
           {% if page.codeurl %}
             <a href=" {{ page.codeurl }} "><button class="btn btn--inverse"><i class="fab fa-fw fa-github" aria-hidden="true"></i> Code</button></a>
           {% endif %}
+          {% if page.bibtex %}
+            <button class="btn btn--inverse" onclick='prompt("BibTeX:", "{{ page.bibtex }}")'><i class="fas fa-fw fa-file-code"></i> BibTeX</button>
+          {% endif %}
         </p>
         {% endif %}
       </section>
