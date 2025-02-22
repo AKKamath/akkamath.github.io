@@ -29,6 +29,9 @@ series = {ASPLOS 2025}
 }
 "
 ---
+<p style="text-align:center">
+<img alt="POD-Attention" src="/images/pod_attention_logo.png" width="15%">
+<p>
 Each request in LLM inference goes through two phases: compute-bound <em>prefill</em> and memory-bandwidth-bound <em>decode</em>. To improve GPU utilization, recent systems use hybrid batching that combines the prefill and decode phases of different requests into the same batch. This approach optimizes linear operations but remains inefficient for attention computation because <em>existing attention kernels specialize execution independently for the prefill and decode phases</em>.
 
 In this paper, we present POD-Attention --- the first GPU kernel that efficiently computes attention for hybrid batches. POD-Attention aims to maximize the utilization of both compute and memory bandwidth by carefully allocating the GPU's resources such that prefill and decode operations happen concurrently on the same multiprocessor.
