@@ -151,3 +151,10 @@
     font-size: $type-size-7;
   }
 }
+
+.btn-label {
+  font-size: 0;
+  height: 1px;
+  overflow: hidden;
+  display: block;
+}

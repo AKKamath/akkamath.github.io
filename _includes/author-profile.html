@@ -21,14 +21,14 @@
       {{ author.name }}
       {% if author.sound %}
         <audio id="author__sound" src={{ author.sound }} type="audio/mpeg"></audio>
-        <button class="fa fa-volume-up author__sound" onclick="document.getElementById('author__sound').play()"></button>
+        <button class="fa fa-volume-up author__sound" onclick="document.getElementById('author__sound').play()"><span class="btn-label">Hear pronunciation</span></button>
       {% endif %}
     </h3>
     {% if author.pronunciation %}
       <div class="author__pronunciation">({{ author.pronunciation }} 
       {% if author.sound %}
         <audio id="author__sound" src={{ author.sound }} type="audio/mpeg"> <a href={{ author.sound }}>Download pronunciation</a></audio>
-        <button class="fa fa-volume-up author__sound" onclick="document.getElementById('author__sound').play()"></button>
+        <button class="fa fa-volume-up author__sound" onclick="document.getElementById('author__sound').play()"><span class="btn-label">Hear pronunciation</span></button>
       {% endif %}
     )</div>{% endif %}
     {% if author.bio %}<p class="author__bio">{{ author.bio }}</p>{% endif %}
