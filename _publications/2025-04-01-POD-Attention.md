@@ -4,10 +4,11 @@ collection: publications
 permalink: /publication/ASPLOS25-POD-Attention
 excerpt: 'In this paper, we present POD-Attention --- the first GPU kernel that efficiently computes attention for hybrid-batch LLM inference. POD-Attention maximizes the utilization of both compute and memory bandwidth by carefully allocating GPU resources such that prefill and decode operations happen concurrently on the same multiprocessor.POD-Attention speeds up attention computation by up to $59\%$ (mean $28\%$), enabling higher throughput and lower latency LLM inference.'
 date: 2025-04-01
-venue: '[To appear in] ACM 30th International Conference on Architectural Support for Programming Languages and Operating Systems (ASPLOS)'
+venue: 'ACM 30th International Conference on Architectural Support for Programming Languages and Operating Systems (ASPLOS)'
 shortform: "ASPLOS '25"
 authorlist: "<B>Aditya K Kamath</B>, Ramya Prabhu, Jayashree Mohan, Simon Peter, Ramachandran Ramjee, Ashish Panwar"
 paperurl: '/files/ASPLOS25_POD.pdf'
+award: 'Distinguished Artifact Award'
 #videourl: ''
 #videoembed: ''
 codeurl: 'https://github.com/microsoft/vattention/tree/main/pod_attn'
