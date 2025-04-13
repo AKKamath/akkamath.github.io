@@ -18,15 +18,17 @@ bibtex: "
 author = {Kamath, Aditya K and Prabhu, Ramya and Mohan, Jayashree and Peter, Simon and Ramjee, Ramachandran and Panwar, Ashish},
 title = {POD-Attention: Unlocking Full Prefill-Decode Overlap for Faster LLM Inference},
 year = {2025},
-isbn = {979-8-4007-1079-7/2025/03},
+isbn = {9798400710797},
 publisher = {Association for Computing Machinery},
 address = {New York, NY, USA},
 url = {https://doi.org/10.1145/3676641.3715996},
 doi = {10.1145/3676641.3715996},
 booktitle = {Proceedings of the 30th ACM International Conference on Architectural Support for Programming Languages and Operating Systems, Volume 2},
+pages = {897–912},
+numpages = {16},
 keywords = {Large language models; GPUs; self-attention},
-location = {Rotterdam, The Netherlands},
-series = {ASPLOS 2025}
+location = {Rotterdam, Netherlands},
+series = {ASPLOS '25}
 }
 "
 ---
