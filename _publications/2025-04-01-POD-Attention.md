@@ -28,7 +28,7 @@ pages = {897–912},
 numpages = {16},
 keywords = {Large language models; GPUs; self-attention},
 location = {Rotterdam, Netherlands},
-series = {ASPLOS '25}
+series = {ASPLOS 2025}
 }
 "
 ---
